@@ -15,7 +15,6 @@ import Model.Mahasiswa;
 import Model.Matakuliah;
 import Model.Pengajar;
 import Model.Transaksi;
-import java.awt.Color;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import javax.swing.JOptionPane;
@@ -41,6 +40,11 @@ public class MainView extends javax.swing.JFrame {
     public MainView(String u) {  // get username from Login
         initComponents();
         this.setLocationRelativeTo(null);
+        /*
+        IS : u adalah username yang dikirim dari Login view 
+        FS : username akan ditampilkan pada pada Jumbotron dengan
+            dengan Huruf pertama adalah kapital
+        */
         String x = u.substring(0, 1).toUpperCase();
         user = x + u.substring(1, u.length());
         LabelHeader.setText("Welcome, " + user);
@@ -192,7 +196,7 @@ public class MainView extends javax.swing.JFrame {
         Navbar.setBackground(new java.awt.Color(199, 236, 238));
 
         Home.setBackground(new java.awt.Color(245, 246, 250));
-        Home.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\home.png")); // NOI18N
+        Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/home.png"))); // NOI18N
         Home.setText("Home");
         Home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,7 +205,7 @@ public class MainView extends javax.swing.JFrame {
         });
 
         Logout.setBackground(new java.awt.Color(245, 246, 250));
-        Logout.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\logout_line.png")); // NOI18N
+        Logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/logout_line.png"))); // NOI18N
         Logout.setText("Logout");
         Logout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -254,7 +258,7 @@ public class MainView extends javax.swing.JFrame {
         Menu.setBackground(new java.awt.Color(245, 246, 250));
 
         MenuLaporan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MenuLaporan.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\icon\\report.png")); // NOI18N
+        MenuLaporan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/report.png"))); // NOI18N
         MenuLaporan.setText("Laporan");
         MenuLaporan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         MenuLaporan.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -266,7 +270,7 @@ public class MainView extends javax.swing.JFrame {
         });
 
         MenuDaftar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MenuDaftar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\icon\\register_solid.png")); // NOI18N
+        MenuDaftar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/register_solid.png"))); // NOI18N
         MenuDaftar.setText("Daftar");
         MenuDaftar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         MenuDaftar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -278,7 +282,7 @@ public class MainView extends javax.swing.JFrame {
         });
 
         MenuKelas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MenuKelas.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\icon\\classroom.png")); // NOI18N
+        MenuKelas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/classroom.png"))); // NOI18N
         MenuKelas.setText("Kelas");
         MenuKelas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         MenuKelas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -295,7 +299,7 @@ public class MainView extends javax.swing.JFrame {
         });
 
         MenuMatakuliah.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MenuMatakuliah.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\icon\\Background.png")); // NOI18N
+        MenuMatakuliah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/Background.png"))); // NOI18N
         MenuMatakuliah.setText("Matakuliah");
         MenuMatakuliah.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         MenuMatakuliah.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -307,7 +311,7 @@ public class MainView extends javax.swing.JFrame {
         });
 
         MenuMahasiswa.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MenuMahasiswa.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\icon\\student.png")); // NOI18N
+        MenuMahasiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/student.png"))); // NOI18N
         MenuMahasiswa.setText("Mahasiswa");
         MenuMahasiswa.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         MenuMahasiswa.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -319,7 +323,7 @@ public class MainView extends javax.swing.JFrame {
         });
 
         MenuPengajar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MenuPengajar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\icon\\Teacher.png")); // NOI18N
+        MenuPengajar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/Teacher.png"))); // NOI18N
         MenuPengajar.setText("Pengajar");
         MenuPengajar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         MenuPengajar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -331,7 +335,7 @@ public class MainView extends javax.swing.JFrame {
         });
 
         MenuKeluar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MenuKeluar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\logout.png")); // NOI18N
+        MenuKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/logout.png"))); // NOI18N
         MenuKeluar.setText("Keluar");
         MenuKeluar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         MenuKeluar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1407,7 +1411,13 @@ public class MainView extends javax.swing.JFrame {
     }//GEN-LAST:event_HomeActionPerformed
 
     private void btnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCariActionPerformed
-
+        
+        /*  LabelKontrol adalah variabel yang digunakan sebagai penanda Panel Kontrol
+            yang sedang aktif. Karena pada MainView  hanya menggunakan satu Panel Kontrol dan  satu Tabel saja
+            untuk Matakuliah,Pengajar, Mahasiswa dan Pegawai.
+            Tabel dan Panel tadi agar melmiliki data yang berkaitan dengan entitasnya maka digunakan Penanda
+            untuk mengetahui siapa yang sedang mengguanak panel / tabel tersebut
+        */
         switch (LabelKontrol.getText()) {
             case "KONTROL MATAKULIAH":
                 {
@@ -1448,7 +1458,12 @@ public class MainView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCariActionPerformed
 
     private void btnFilterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFilterActionPerformed
-
+        /*  LabelKontrol adalah variabel yang digunakan sebagai penanda Panel Kontrol
+            yang sedang aktif. Karena pada MainView  hanya menggunakan satu Panel Kontrol dan  satu Tabel saja
+            untuk Matakuliah,Pengajar, Mahasiswa dan Pegawai.
+            Tabel dan Panel tadi agar melmiliki data yang berkaitan dengan entitasnya maka digunakan Penanda
+            untuk mengetahui siapa yang sedang mengguanak panel / tabel tersebut
+        */
         switch (LabelKontrol.getText()) {
             case "KONTROL MATAKULIAH":
                 {
@@ -1488,7 +1503,12 @@ public class MainView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFilterActionPerformed
 
     private void comboOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboOrderActionPerformed
-        // TODO add your handling code here:
+        /*  LabelKontrol adalah variabel yang digunakan sebagai penanda Panel Kontrol
+            yang sedang aktif. Karena pada MainView  hanya menggunakan satu Panel Kontrol dan  satu Tabel saja
+            untuk Matakuliah,Pengajar, Mahasiswa dan Pegawai.
+            Tabel dan Panel tadi agar melmiliki data yang berkaitan dengan entitasnya maka digunakan Penanda
+            untuk mengetahui siapa yang sedang mengguanak panel / tabel tersebut
+        */
         if (comboOrder.getSelectedIndex() != 0) {
 
             switch (LabelKontrol.getText()) {
@@ -1527,6 +1547,12 @@ public class MainView extends javax.swing.JFrame {
     }//GEN-LAST:event_comboOrderActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+        /*  LabelKontrol adalah variabel yang digunakan sebagai penanda Panel Kontrol
+            yang sedang aktif. Karena pada MainView  hanya menggunakan satu Panel Kontrol dan  satu Tabel saja
+            untuk Matakuliah,Pengajar, Mahasiswa dan Pegawai.
+            Tabel dan Panel tadi agar melmiliki data yang berkaitan dengan entitasnya maka digunakan Penanda
+            untuk mengetahui siapa yang sedang mengguanak panel / tabel tersebut
+        */
         switch (LabelKontrol.getText()) {
             case "KONTROL MATAKULIAH":
                 {
@@ -1561,25 +1587,13 @@ public class MainView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnResetActionPerformed
 
-    private boolean isAngka(String x) {
-        try {
-            int a = Integer.parseInt(x);
-            return true;
-        } catch (NumberFormatException ex) {
-            return false;
-        }
-    }
-
-    private boolean validasiMatakuliah() {
-        return (!textKdMatakuliah.getText().isEmpty()
-                && !textNamaMatakuliah.getText().isEmpty()
-                && !textHargaMk.getText().isEmpty()
-                && !textSKS.getText().isEmpty());
-    }
-
-
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
-        
+        /*  LabelKontrol adalah variabel yang digunakan sebagai penanda Panel Kontrol
+            yang sedang aktif. Karena pada MainView  hanya menggunakan satu Panel Kontrol dan  satu Tabel saja
+            untuk Matakuliah,Pengajar, Mahasiswa dan Pegawai.
+            Tabel dan Panel tadi agar melmiliki data yang berkaitan dengan entitasnya maka digunakan Penanda
+            untuk mengetahui siapa yang sedang mengguanak panel / tabel tersebut
+        */
         switch (LabelKontrol.getText()) {
             
             case "KONTROL MATAKULIAH":
@@ -1608,17 +1622,32 @@ public class MainView extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnTambahActionPerformed
 
+    private boolean isAngka(String x) {
+        try {
+            int a = Integer.parseInt(x);
+            return true;
+        } catch (NumberFormatException ex) {
+            return false;
+        }
+    }
+
+    private boolean validasiMatakuliah() {
+        return (!textKdMatakuliah.getText().isEmpty()
+                && !textNamaMatakuliah.getText().isEmpty()
+                && !textHargaMk.getText().isEmpty()
+                && !textSKS.getText().isEmpty());
+    }
+    
     private void btnTambahMatakuliahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahMatakuliahActionPerformed
 
-        if (validasiMatakuliah()) {
+        if ( validasiMatakuliah() ) {
             
             if (isAngka(textHargaMk.getText())
                     && isAngka(textSKS.getText())) {
             
                 int harga = Integer.parseInt(textHargaMk.getText());
                 int sks = Integer.parseInt(textSKS.getText());
-                
-                
+
                 Matakuliah mk = new Matakuliah(
                         textKdMatakuliah.getText().toUpperCase(),
                         textNamaMatakuliah.getText(),
@@ -1627,16 +1656,16 @@ public class MainView extends javax.swing.JFrame {
                 );
                 
                 DaoMatakuliah d = new DaoMatakuliah();
-                
                 d.setMatakuliah(mk);
                 
                 if (LabelTambahMK.getText().equals("UPDATE MATAKULIAH")) {
                     
-                    if (Tabel.getSelectedRowCount() <= 0) {
+                    if (Tabel.getSelectedRowCount() <= 0) { // data tidak terudate
                         JOptionPane.showMessageDialog(null, "Pilih Baris Yang Akan di Upadte!");
                     } else {
                         d.update(Tabel);
                     }
+                    
                 } else {
                     d.insert(Tabel);
                 }
@@ -1663,74 +1692,103 @@ public class MainView extends javax.swing.JFrame {
     private String nim;
 
     private void TabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabelMouseClicked
+
+        /*
+            Karna memiliki satu Tabel Maka LabelTambah[Entitas] digunakan
+            sebagai penanda entitas apa yang sedang menggunakan Tabel
+        ex : LabelTambahMK = UPDATE MATAKULIAH maka tabel sedang digunakan
+             entitas Matakuliah
+        */
+        
         int sr = Tabel.getSelectedRow();
         DefaultTableModel model = (DefaultTableModel) Tabel.getModel();
         model.getDataVector().indexOf(sr);
-
+        
+        /*  IS : Row pada tabel telah terpilih
+            FS : Mengisi Field sesuai dengan database
+        */
+        
         if (LabelTambahMK.getText().equals("UPDATE MATAKULIAH")) {
-
-            textKdMatakuliah.setText(
-                                   (String) model.getValueAt(sr, 0)
-                                 );
-            textNamaMatakuliah.setText(
-                                  (String) model.getValueAt(sr, 1)
-                                 );
-            textHargaMk.setText(
-                                (String) model.getValueAt(sr, 3)
-                                );
-            textSKS.setText(
-                            (String) model.getValueAt(sr, 2)
-                            );
+            textKdMatakuliah.setText( (String) model.getValueAt(sr, 0) );
+            textNamaMatakuliah.setText((String) model.getValueAt(sr, 1));
+            textHargaMk.setText((String) model.getValueAt(sr, 3));
+            textSKS.setText((String) model.getValueAt(sr, 2));
 
         } else if (LabelKontrol.getText().equals("KONTROL MATAKULIAH")) {
 
             textKdMatakuliah.setText((String) model.getValueAt(sr, 0));
 
         } else if (LabelTambahPengajar.getText().equals("UPDATE PENGAJAR")) {
+            
             idPengajar = (String) model.getValueAt(sr, 0);
             textNamaPengajar.setText((String) model.getValueAt(sr, 1));
             comboJkPengajar.setSelectedItem((String) model.getValueAt(sr, 2));
             textPendidikan.setText((String) model.getValueAt(sr, 3));
+            
         } else if (LabelKontrol.getText().equals("KONTROL PENGAJAR")) {
+            
             idPengajar = (String) model.getValueAt(sr, 0);
+            
         } else if (LabelTambahKelas.getText().equals("UPDATE KELAS")) {
+            
             idPengajar = (String) model.getValueAt(sr, 0);
             textKelas.setText((idPengajar));
             textKapasitas.setText((String) model.getValueAt(sr, 1));
             comboJadwal.setSelectedItem((String) model.getValueAt(sr, 2));
+            
         } else if ((LabelKontrol.getText().equals("KONTROL KELAS"))) {
+            
             idPengajar = (String) model.getValueAt(sr, 0);
+            
         } else if (LabelUbahMahasiswa.getText().equals("UPDATE MAHASISWA")) {
+            
             nim = (String) model.getValueAt(sr, 0);
             textUbahMahasiswa.setText((String) model.getValueAt(sr, 1));
             comboJkMahasiswa.setSelectedItem((String) model.getValueAt(sr, 2));
             textUbahSemester.setText((String) model.getValueAt(sr, 3));
             textUbahJurusan.setText((String) model.getValueAt(sr, 4));
             btnUbahMahasiswa.setText("Update");
+            
         } else if ((LabelKontrol.getText().equals("KONTROL MAHASISWA"))) {
+            
             nim = (String) model.getValueAt(sr, 0);
+            
         }
     }//GEN-LAST:event_TabelMouseClicked
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        /*  LabelKontrol adalah variabel yang digunakan sebagai penanda Panel Kontrol
+            yang sedang aktif. Karena pada MainView  hanya menggunakan satu Panel Kontrol dan  satu Tabel saja
+            untuk Matakuliah,Pengajar, Mahasiswa dan Pegawai.
+            Tabel dan Panel tadi agar melmiliki data yang berkaitan dengan entitasnya maka digunakan Penanda
+            untuk mengetahui siapa yang sedang mengguanak panel / tabel tersebut
+        */
+        
         if (LabelKontrol.getText().equals("KONTROL MATAKULIAH")) {
+            
             KontrolData.setVisible(false);
             KontrolMatakuliah.setVisible(true);
             LabelTambahMK.setText("UPDATE MATAKULIAH");
             textKdMatakuliah.disable();
             btnTambahMatakuliah.setText("Update");
+            
         } else if (LabelKontrol.getText().equals("KONTROL PENGAJAR")) {
+            
             KontrolData.setVisible(false);
             KontrolPengajar.setVisible(true);
             new DaoMatakuliah().fillCombo(comboPilihMk);
             LabelTambahPengajar.setText("UPDATE PENGAJAR");
             btnTambahPengajar.setText("Update");
+            
         } else if (LabelKontrol.getText().equals("KONTROL MAHASISWA")) {
+            
             KontrolData.setVisible(false);
             KontrolMahasiswa.setVisible(true);
             LabelUbahMahasiswa.setText("UPDATE MAHASISWA");
             btnUbahMahasiswa.setText("Update");
+            
         } else if (LabelKontrol.getText().equals("KONTROL KELAS")) {
+            
             KontrolData.setVisible(false);
             KontrolKelas.setVisible(true);
             LabelTambahKelas.setText("UPDATE KELAS");
@@ -1740,18 +1798,26 @@ public class MainView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
-        // TODO add your handling code here:
-        if (Tabel.getSelectedRowCount() > 0) {
+        
+        if (Tabel.getSelectedRowCount() > 0) { // ada row yang dipilih dari tabel
+            
             if (LabelKontrol.getText().equals("KONTROL MATAKULIAH")) {
+                
                 DaoMatakuliah d = new DaoMatakuliah();
                 d.delete(Tabel, textKdMatakuliah.getText());
+                
             } else if (LabelKontrol.getText().equals("KONTROL PENGAJAR")) {
+                
                 DaoPengajar d = new DaoPengajar();
                 d.delete(Tabel, idPengajar);
+                
             } else if (LabelKontrol.getText().equals("KONTROL KELAS")) {
+                
                 DaoKelas d = new DaoKelas();
                 d.delete(Tabel, idPengajar);
+                
             } else if (LabelKontrol.getText().equals("KONTROL MAHASISWA")) {
+                
                 DaoMahasiswa d = new DaoMahasiswa();
                 d.delete(Tabel, nim);
             }
@@ -1778,6 +1844,7 @@ public class MainView extends javax.swing.JFrame {
     }
 
     private void btnTambahPengajarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahPengajarActionPerformed
+      
         if (validasiPengajar()) {
             if (comboJkPengajar.getSelectedIndex() != 0
                     && comboPilihMk.getSelectedIndex() != 0) {
@@ -2152,7 +2219,7 @@ public class MainView extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-
+                // Memaksa user harus login Dulu
                 if (user == null) {
                     new MainView().setVisible(false);
                 } else {

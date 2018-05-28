@@ -79,7 +79,13 @@ public abstract class Dao {
     }
     
     public void filter(String textmin,String textmax){
-            
+         
+        /*
+            Jika salah satu textfield kosong maka akan tetap dilakukan filtering
+            dengan ketentuan :
+            textmin is empty then set textmin to "0"
+            textmax is empty then set textmax to "999999"
+        */
         if(textmin.isEmpty()){
             textmin = "0";
         }
@@ -126,6 +132,13 @@ public abstract class Dao {
         sqlQuery("SELECT * FROM "+tabel);
     }
     
+    //load items to comboBox Order
+    //comboBox Order berisi OrderBy apa saja yang dapat dilakukan
+    // ex : Entitas Matakuliah maka ComboOrder akan berisi
+    //      1. OrderBy
+    //      2. Kode Matakuliah
+    //      3. Harga
+    //      4. Nama
     public void fillComboOrder(JComboBox combo){
         clearCombo(combo);
         for(String k : koloms){
@@ -133,13 +146,17 @@ public abstract class Dao {
         }
     }
     
+    //menghapus item comboBox sebelumnya, 
+    // hanya tersisa item ke 0 yang berupa keterrangan dari comboBox tsb
     public void clearCombo(JComboBox combo){
         for(int i = combo.getItemCount()-1 ; i >0 ; i-- ){
             combo.removeItemAt(i);
         }
     }
     
+    //load items to comboBox
     public void fillCombo(JComboBox combo){
+        
         clearCombo(combo);
         Iterator<String> it;
         it = getComboItems().keySet().iterator();

@@ -117,7 +117,7 @@
                   <Color blue="fa" green="f6" red="f5" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Js\Videos\home.png"/>
+                  <Image iconType="3" name="/asset/home.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Home"/>
               </Properties>
@@ -131,7 +131,7 @@
                   <Color blue="fa" green="f6" red="f5" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Js\Videos\logout_line.png"/>
+                  <Image iconType="3" name="/asset/logout_line.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Logout"/>
               </Properties>
@@ -283,7 +283,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="C:\Users\Js\Videos\icon\report.png"/>
+                          <Image iconType="3" name="/asset/report.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Laporan"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -300,7 +300,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="C:\Users\Js\Videos\icon\register_solid.png"/>
+                          <Image iconType="3" name="/asset/register_solid.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Daftar"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -317,7 +317,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="C:\Users\Js\Videos\icon\classroom.png"/>
+                          <Image iconType="3" name="/asset/classroom.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Kelas"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -335,7 +335,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="C:\Users\Js\Videos\icon\Background.png"/>
+                          <Image iconType="3" name="/asset/Background.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Matakuliah"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -352,7 +352,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="C:\Users\Js\Videos\icon\student.png"/>
+                          <Image iconType="3" name="/asset/student.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Mahasiswa"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -369,7 +369,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="C:\Users\Js\Videos\icon\Teacher.png"/>
+                          <Image iconType="3" name="/asset/Teacher.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Pengajar"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -386,7 +386,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="2" name="C:\Users\Js\Videos\logout.png"/>
+                          <Image iconType="3" name="/asset/logout.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Keluar"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">

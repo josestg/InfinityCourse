@@ -60,7 +60,7 @@ import javax.swing.JOptionPane;
         jLabel6.setFont(new java.awt.Font("Dopestyle ", 1, 48)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(223, 249, 251));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Js\\Videos\\rawpixel-558596-unsplash.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/rawpixel-558596-unsplash.jpg"))); // NOI18N
         jLabel6.setText("Infinity Course");
         jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(jLabel6, "card2");
@@ -208,6 +208,7 @@ import javax.swing.JOptionPane;
             if(sp.validasiData()){
                 if(sp.getDaftar()!=-1){
                     this.setVisible(false);
+                    //mengirim username yang baru terdaftar ke textfiedlUsername ke Login
                     new Login(DaftarUsername.getText()).setVisible(true);
                 }
             }else{

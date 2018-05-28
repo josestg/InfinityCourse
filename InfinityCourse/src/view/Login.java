@@ -22,6 +22,7 @@ public class Login extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
     public Login(String u) {
+        //mengerima username yang baru terdaftar
         initComponents();
         this.setLocationRelativeTo(null);
         this.textUsername.setText(u);
@@ -174,13 +175,15 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-            SignPegawai sm = new SignPegawai();
+            
+        SignPegawai sm = new SignPegawai();
             if (sm.validasiUser(textUsername.getText(), textPassword.getText())) {
                  new MainView(textUsername.getText()).setVisible(true);
                  this.setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(null, "Password atau ");
             }
+            
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
